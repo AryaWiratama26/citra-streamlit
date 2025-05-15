@@ -10,9 +10,12 @@ def header(image):
     st.header("Input")       
     st.image(image)
 
+def my_data():
+    st.subheader("Arya Wiratama (312310224)")
 
 def main():
     st.header("Welcome to image transformation with Opencv")
+    my_data()
     file_uploaded = st.file_uploader("Please upload an image file....", type=['jpg', 'png', 'jpeg'])
     if file_uploaded is not None:
         image = Image.open(file_uploaded)
